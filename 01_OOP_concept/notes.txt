@@ -1,0 +1,20 @@
+Private
+default
+protected
+public
+
+constructor:
+it is  a special method having same name of class with no return type.
+it cannot be called explicitly.
+it is used to initialize the data member.
+it can be overloaded.
+
+
+this:
+this is a keyword.
+this is a reference refer to current object.
+this is default available in all the instance method;
+
+when to use this:
+ 1. remove the shadowing of variable
+ 2. chaining of the constuctor
