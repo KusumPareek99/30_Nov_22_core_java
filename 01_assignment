@@ -1,0 +1,92 @@
+Assignment:
+	
+Date
+  dd
+  mm
+  yy
+
+  //constructor 
+
+  //display
+
+  // getter and setter
+
+  //behaviour/method
+  boolean isLeapYear() {} 
+  
+  getMonth(){
+	//return Jan, Feb, Mar, Apr
+  }
+  
+  Date nextDay(){
+	return the Date object => 2/8/2023
+  }
+ 
+ //sample code
+  
+
+public class Date {
+
+	private int dd;
+	private int mm;
+	private int yy;
+
+	public Date() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Date(int dd, int mm, int yy) {
+		this.dd = dd;
+		this.mm = mm;
+		this.yy = yy;
+	}
+	
+	public boolean isLeapYear() {
+		return true; //write the logic for leap year
+	}
+	
+	public String getMonth() {
+		return ""; //write the logic to return the month
+		//use switch case
+	}
+	
+	public Date nextDate() {
+		Date d = new Date();
+		//logic to find next day with year and month
+		//below logic will not work in few case
+		d.setDd(dd+1);
+		d.setMm(mm);
+		d.setYy(yy);
+		return d;		
+	}
+	
+	public int getLastDay() {
+		//write the logic to find the last day of current month
+		return 0;
+	}
+
+	public int getDd() {
+		return dd;
+	}
+
+	public void setDd(int dd) {
+		this.dd = dd;
+	}
+
+	public int getMm() {
+		return mm;
+	}
+
+	public void setMm(int mm) {
+		this.mm = mm;
+	}
+
+	public int getYy() {
+		return yy;
+	}
+
+	public void setYy(int yy) {
+		this.yy = yy;
+	}
+
+}
