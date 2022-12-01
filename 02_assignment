@@ -64,5 +64,13 @@ public static boolean isArrayHavingPalidormeElement(int[] arr){
 	// 1 3  4 5  false
 }
 
+//enum
+coffesize:
 
+SMALL(100,20)
+MEDIUM(200,30)
+LARGE(300,40)
+
+--constructor
+--method when you pass quantity it return the coffeesize(enum).
 
