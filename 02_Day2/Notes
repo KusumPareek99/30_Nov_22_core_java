@@ -1,0 +1,133 @@
+Naming convention:
+
+class Name => start with upper case
+Employee
+MyFirstDemo
+
+Variable/method => camel notation start with lower case
+eg:
+num1
+num2
+hra
+myFirstVariable
+
+constant variable/Enum element  => UPPER case
+PI
+FIXED_AMOUNT
+MY_FIRST_CONSTANT_VARIABLE
+
+
+
+Method Overloading:
+method with same name and different signature.
+it doesn't depend upon return type.
+
+Signatue:
+1. no of parameter
+2. type of parameter
+3. sequence in which parameter passed
+
+
+
+
+
+
+
+
+Enhanced for loop:
+for(elementType var  :collection){
+
+}
+
+
+2d array
+int[][] arr= new int[2][3];  //y
+int[][] barr= new int[2][];  //y
+int[][] carr = new int[][3];  //n
+int[][] darr = new int[][];
+
+
+
+
+
+Enum
+
+
+
+
+
+
+package:
+
+folder:
+
+corejava
+corejava
+
+
+pkg1
+Employee
+
+
+
+pkg2
+Main
+
+
+pkg3
+Employee
+
+
+package com.zensar.entity;
+
+class Employee{
+
+}
+
+
+com
+  zensar
+     50 class
+     entity
+       10
+     
+     service
+        20
+
+
+import com.zensar.*;
+java.lang;
+
+
+
+calculate the average of array. use enhanced for loop;
+10 20 30 40 50
+
+
+getMaxNumber(int[] arr){
+
+}
+
+10  5   3   40  1
+1 2 4 5 10
+
+
+public static int getLargest(int[] getMaxNum){  
+		int temp;  
+		for (int i = 0; i < n; i++)   
+		        {  
+		            for (int j = i + 1; j < n; j++)   
+		            {  
+		                if (getMaxNum[i] > getMaxNum[j])   
+		                {  
+		                    temp = getMaxNum[i];  
+		                    getMaxNum[i] = getMaxNum[j];  
+		                    getMaxNum[j] = temp;  
+		                }  
+		            }  
+		        }  
+		       return getMaxNum[n-1];  
+}
+
+
+
