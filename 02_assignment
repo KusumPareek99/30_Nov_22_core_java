@@ -74,3 +74,100 @@ LARGE(300,40)
 --constructor
 --method when you pass quantity it return the coffeesize(enum).
 
+
+
+
+
+
+
+
+
+
+Solution:
+
+package com.easylearning.main;
+
+public class ArrayAssignment {
+
+	public static void main(String[] args) {
+		int[] barr = { 0, 0, 1, 1, 1, 1, 2, 2, 2, 0, 0, 1, 0, 2, 1, 2, 1, 2, 0, 0 };
+		int[] arr = { 1, 1, 0, 0, 1, 2 };
+
+		sortArrayHaving3Element(barr);
+		sortArrayHaving3Element(arr);
+
+		display(arr);
+		display(barr);
+		
+		System.out.println(secondHighest(new int[] {1,2,3,1,2,3,4,3,44,4}));
+		System.out.println(secondHighest(new int[] {1,2,30,1,2,3,4,3,44,4}));
+
+	}
+
+	public static void display(int[] arr) {
+		for (int a : arr) {
+			System.out.print(a + " ");
+		}
+		System.out.println();
+	}
+
+	public static boolean isPalindrome(int []arr) {
+		boolean flag=true;
+		
+		for(int i=0; i<=arr.length/2;i++) {
+			if(arr[i] != arr[arr.length-i-1]) {
+				flag=false;
+				break;
+			}
+		}
+		
+		return flag;
+	}
+	
+	public static int secondHighest(int[] arr) {
+		int largest = arr[0];
+		int secondLargest = arr[0];
+
+		for (int i = 0; i < arr.length; i++) {
+
+			if (arr[i] > largest) {
+				secondLargest = largest;
+				largest = arr[i];
+
+			} else if (arr[i] > secondLargest) {
+				secondLargest = arr[i];
+			}
+		}
+
+		return secondLargest;
+	}
+
+	public static void sortArrayHaving3Element(int[] arr) {
+		int zeroCount = 0;
+		int oneCount = 0;
+
+		for (int a : arr) {
+			if (a == 0) {
+				zeroCount++;
+			} else if (a == 1) {
+				oneCount++;
+			}
+		}
+
+		for (int i = 0; i < zeroCount; i++) {
+			arr[i] = 0;
+		}
+
+		for (int i = zeroCount; i < zeroCount + oneCount; i++) {
+			arr[i] = 1;
+		}
+
+		for (int i = zeroCount + oneCount; i < arr.length; i++) {
+			arr[i] = 2;
+		}
+
+	}
+
+}
+
+
