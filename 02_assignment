@@ -1,0 +1,38 @@
+
+public class Employee {
+	private int id;
+	private String name;
+	private double basicSalary;
+	private double hra;
+	private double da;
+	private final double FIXED_ALLOWANCE = 2000;
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Employee(int id, String name, double basicSalary, double hra, double da) {
+		this.id = id;
+		this.name = name;
+		this.basicSalary = basicSalary;
+		this.hra = hra;
+		this.da = da;
+	}
+	
+	
+	//getter and setter
+	
+	//display
+	
+	//calculateNetSalary
+	
+
+}
+
+/*
+ id,name,salary, 
+ hra = 12 % of salary
+ da = 20% of salary
+ fixedAllowance = 2000
+ 
+*/
