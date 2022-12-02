@@ -70,3 +70,46 @@ SalesManager  extends SalesPerson
   
  }
    
+ 
+ Fix all the errors:
+ 
+ package pkg1;
+ public ricket{
+   int over = 50;
+   
+   Cricket(){
+   
+   }
+   
+   int Over(){
+     return over;
+   }
+ }
+ 
+ 
+ package pkg2;
+ import pkg1.Cricket;
+ 
+ class T20 extends Cricket{
+   int over =30;
+   
+   public int getOver(){
+      return over;
+   }
+ }
+ 
+ 
+package pkg3;
+
+public class Test{
+  public static void main(String...args){
+    Cricket c =  new T20();
+    sysout(c.getOver());
+    sysout(c.over);
+  }
+}
+ 
+ 
+ 
+ 
+ 
