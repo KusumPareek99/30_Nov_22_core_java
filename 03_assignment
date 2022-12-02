@@ -1,0 +1,72 @@
+
+Employee
+ id
+ name
+ salary
+
+WageEmployee   SalesPerson 
+               SalesManager
+               
+               
+Employee
+  id
+  name
+  salary
+  toString()
+  equals()
+  hashCode();
+  computeSalary();
+  final method display();
+  
+  
+  
+WageEmp extends Employee
+  hours
+  rate
+   toString()
+  equals()
+  hashCode();
+  computeSalary();
+  computeVaraible();
+  
+SalesPerson extends Employee
+  sales:double
+  comm: double
+   toString()
+  equals()
+  hashCode(); 
+  computeSalary();
+  computeCommission();
+  
+SalesManager  extends SalesPerson
+   noOfSub:
+   fixedAllowance: 1000;
+    toString()
+  equals()
+  hashCode();
+   computeSalary();
+  computeBonus();
+   
+   bonus => noOfSub *fixedAllowance
+   
+ 
+   
+ Main(){
+  create two object of each class
+  //check the equality
+  //check hashCode
+  //api displayEmployeeDetails(Employee emp){
+    //display all fields
+    //display baisc salary, Net Salary, Comm, bonus
+    //
+    
+    Create oneArray and add all the above object;
+  }
+  
+  public static double totalVariable(Employee[] arr){}
+  public static double totalBonus(Employee[] arr){}
+  public static double totalNetSalary(Employee[] arr){}
+  
+  
+ }
+   
