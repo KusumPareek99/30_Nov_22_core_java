@@ -1,0 +1,157 @@
+Type of Inheritance:(parent/child  super/sub   base/derived)
+
+Single inheritance
+
+   A
+   ^
+   |
+   B
+
+
+
+Multi level inheritance
+   A
+   ^
+   |
+   B
+   ^
+   |
+   C
+
+
+multiple inheritance (java not support multiple inheritance)
+
+  A       B
+    \   /
+      C
+
+
+heirachical inheritance:
+
+      A
+      /\
+     B   C
+
+
+hybrid
+
+     A
+      /\
+     B   C
+     /
+    D
+    
+  
+ Binding:
+ compile/early/static binding
+ runtime/lazy/dynamic binding
+ 
+ to inherhit:  extends
+ 
+ 
+ 
+ Employee
+    display()
+    
+    
+ WageEmployee extends Employee
+    display()
+    
+
+ WageEmployee e2 = new WageEmployee();
+ e2.display();
+     
+ Employee e1 = new WageEmployee();
+ e1.display();
+ 
+ 
+ Polymorphism:
+ 
+ 
+ 
+ Object class: super cosmic class
+ 1. hashCode()
+ 2. equals()
+ 3. toString()
+ 4. getClass()
+ 
+  
+ 5. clone()
+ 
+ 
+ 6. wait()
+ 7. notify()
+ 8. notifyAll()
+ 
+ Overriding:
+ same name, same signature, same return type, access specifier should be same or greater
+ In java 5, introduced covariant return type
+ 
+ Employee
+ public void display()
+ public Employee getInstance(){}
+ public Object copy(){}
+ protected void test(){}
+ 
+ 
+ 
+ WageEmployee extends Employee
+ public void display(){}
+ public WageEmployee getInstance(){}
+ public WageEmployee copy(){}
+ void test(){}
+ 
+
+ 
+ private
+ default
+ protected
+ public
+ 
+ 
+ 
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) {
+			return true;
+		}
+		
+		if(obj instanceof Employee) {
+			Employee e = (Employee)obj;
+			return this.id == e.id && this.name.equals(e.name) && this.salary == e.salary;
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+
+		//return (id+name+salary).hashCode();
+		return Objects.hash(id,name,salary);
+	}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
