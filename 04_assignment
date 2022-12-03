@@ -1,0 +1,70 @@
+Assignment:
+Shape
+  getNoOfSide();
+  
+  Rectangle:class
+  Circle:class
+  Square:class
+  Triangle:class
+  EquilateralTriangle:class
+  
+ // create one object of each
+ // generic method which will display the details of all above created
+ 
+ //create the clone(deep cloning)  of each object and check whether new object is created or not
+  --single method to check
+  
+  
+Printable interface
+  implemented by SalesPerson, WageEmployee, Triangle, Square
+   01. create one generic method 
+        and try to pass the object of SalesPerson, WageEmployee, Triangle, Square,Employee, Rectangle
+        
+    02. create object Address
+                       city:string
+                       pincode:string
+                       landmark:string
+     03. clone of employee object and check the address object is cloned or not
+  
+  public static boolean isCyclicSubString(String str, String substr) {
+		//str = abcde  substr = abc  => true
+		//str = abcde  substr = bcdea  => true
+		//str = abcde  substr = ea  => true
+		//str = abcde  substr = ec  => false
+		//str = abcde  substr = abce  => false
+		//str = abcde  substr = eabcdeab  => true
+				
+		//validation := length of substr > 2*length of str 
+		return false;
+	} 
+	
+	public static String reverseString(String str) {
+		return "";
+	}
+	
+	public static boolean isPallindrome(String str) {
+		return false;
+	}
+	
+	public static void printLetterCount(String str) {
+		// str= "abadaabndAb";
+		// A = 1
+		// a = 4
+		//b = 2
+		//d =2	
+	}
+	
+	public static void printLetterCountIgnoreCase(String str) {
+		//String str= "abadaabndAb";
+		// a = 5
+		//b = 2
+		//d =2	
+	}
+	
+	public static void main(String[] args) {
+		//fixMemoryLeakageExample();
+		example4();
+		isCyclicSubString("abc", "cabca");
+		
+		
+	}
